@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ 
+}
+.banner{
+    width: 100%;
+}
+label{
+    display: none;
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+
+}
+li,a,button{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 3% ;
+    background-color: #FF4949;  
+    margin: 0%; 
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a :hover{
+    color:rgb(241, 210, 210);
+}
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+#image2{
+    position: absolute;
+    top: 80px;
+    left: 45px;
+}
+.logo{
+    cursor: pointer;
+    margin-right:auto ;
+    height: 60px;
+    width: 60px;
+    filter: brightness(1)invert(1%);
+    color: #fff;
+}
+button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    transition:all 0.3s ease 0s;
+    cursor:pointer; 
+    background-color:rgb(255, 96, 96);
+}
+button:hover{
+    background-color:rgb(255, 96, 96);
+}
+  input[type=submit] {
+  
+    background-color: #FF4949;
+    color: white;
+    padding: 9px 20px 10px 15px;
+    
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 14%;
+    height: auto;
+    
+  }
+  
+  /* input[type=submit]:hover {
+    background-color: #45a049;
+  
+  } */
+  .icon {
+    padding: 15px;
+    background: #FF4949;
+    color: white;
+    width: 4%;
+    min-height:auto;
+    border-radius: 5%;
+  }
+  
+  .input-field {
+      font-size: 16px;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+  }
+  .floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 60px;
+    top: 20px;
+    transition: 0.2s ease all;
+  }
+  .floating-label2{
+    position: absolute;
+    pointer-events: none;
+    left: 350px;
+    top: 20px;
+    transition: 0.2s ease all;
+  }
+  .card{
+    border-radius: 5px;
+    flex: 1;
+    width: 80%;  
+    
+    position: absolute; 
+    top: 300px;
+     left: 200px;
+    /* display:inline-block; */
+  }
+  .form{
+      display:flex;
+      
+  }
+  label{
+      padding-top:20px;
+      padding-left:0px;
+      padding-right:0px;
+  }
+  
+  input:focus ~ .floating-label,
+  input:not(:focus):valid ~ .floating-label{
+    top: 5px;
+    bottom: 5px;
+    left: 50px;
+    font-size: 11px;
+    opacity: 1;
+  }
+  input:focus ~ .floating-label2,
+  input:not(:focus):valid ~ .floating-label2{
+    top: 5px;
+    bottom: 5px;
+    left:350px;
+    font-size: 11px;
+    opacity: 1;
+  }
+.box{
+    height: 100px;
+    width: 700px;
+    
+    background-color: #fff;
+    position: absolute;
+    top: 175px;
+    font-family: sans-serif;
+    left:150px;
+    box-shadow: 2px 2px 2px 2px  gray;
+}
+.img-1{
+    margin-left: 23px;
+    margin-top: 0px;
+    height: 104px;
+}
+.box-txt{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 450;
+    top: 25px;
+    left: 180px;
+    color:rgb(71, 65, 65);
+}
+.box-t{
+    position: absolute;
+    font-size: 16px;
+    left: 180px;
+    font-weight: 300;
+    color: rgb(177, 172, 172);
+    top:61px;
+}
+.flux{
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding-left: 2px;
+    justify-content: space-between;
+    flex-direction: row;
+   margin-top: 65px;
+   margin-left: 120px;
+   left: 80px;
+   color: rgb(80, 78, 78) ;
+   position: static;
+}
+.card1{
+    height: 250px;
+    width: 350px;
+    flex: 1;
+    
+    font-weight:400;
+    border: 2px solid rgb(209, 204, 204) ;
+    padding: 10px;
+    text-align: center;
+    margin-left: 30px;
+    transition-duration: .5s;
+    
+}
+.card1:hover{
+    transform: scale(1.07);
+    
+}
+.card1 > span{
+    display: block;
+}
+.card2{
+    height: 250px;
+    width: 350px;
+    flex: 1;
+    border: 2px solid rgb(209, 204, 204) ;
+    padding: 10px;
+    text-align: center;
+    margin-left: 30px;
+    transition-duration: .1s;
+    background-color: khaki;
+}
+.card2:hover{
+    transform: scale(1.57);
+
+}
+.card2 > span{
+    display: block;
+}
+
+.card3{
+    height: 250px;
+    width: 350px;
+    flex: 1;
+    border: 2px solid rgb(209, 204, 204) ;
+    padding: 10px;
+    text-align: center;
+    margin-left: 30px;
+    transition-duration: .5s;
+}
+.card3:hover{
+    
+    transform: scale(1.07);
+}
+.card3 > span{
+    display: block;
+}
+
+
+  @media screen and (max-width:1024px){
+    header{
+        width: 100%;
+    }
+    .nav-links{
+        width: 100%;
+    }
+   .card{
+        border-radius: 5px;
+        flex: 1;
+        width: 70%;  
+        flex-wrap:wrap;
+        position: absolute; 
+        top: 300px;
+         left: 200px;
+        /* display:inline-block; */
+      }
+      
+      .icon{
+        padding-top: 15px;
+        width: 8%;
+      }
+      input[type="text"]{
+          max-width: 140px;
+      }
+    #image2{
+        position: absolute;
+        top: 180px;
+        left: 75px;
+        width: 900px;
+        height: 250px;
+    }
+    .box{
+        left: 0;
+    }
+    .floating-label2{
+        left:260px;
+    }
+    input:focus ~ .floating-label2,
+  input:not(:focus):valid ~ .floating-label2{
+    left:250px;
+    }
+    .bg-video{
+        left:80px;
+        position: absolute;
+        max-width: 80%;
+        height: 236px;
+        
+        top: 25px;
+    }
+    .flux{
+        flex: 1;
+        flex-direction: row;
+        width: 97%;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:640px){
+   label{
+       display: block;
+       cursor:pointer;
+       width: 26px;
+       float: right;
+   }
+    .nav-links{
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    .nav-links a{
+        clear: right;
+    }
+    .nav-links li a{
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    #toggle:checked + .nav-links{
+        display: block;
+    }
+    #image-1{
+        position: relative;
+        background-size: 100%;
+        height: 400px;
+        width: 100%;
+    }
+    .card{
+       
+        width: 70%;  
+     
+        top: 300px;
+         left:0px;
+        /* display:inline-block; */
+      }
+      .icon{
+        padding-top: 15px;
+        width: 8%;
+      }
+      input[type="text"]{
+          max-width: 100px;
+      }
+      input[type="date"]{
+        max-width: 100px;
+    }
+    #image2{
+        position: absolute;
+        top: 180px;
+        left: 5px;
+        width: 600px;
+        height: 250px;
+    }
+    .box{
+        left: 60px;
+        max-width: 500px;
+    }
+    .box-txt{
+        top:5px;
+    }
+    .floating-label{
+        left:90px;
+    }
+    .floating-label2{
+        left:220px;
+    }
+    input:focus ~ .floating-label,
+  input:not(:focus):valid ~ .floating-label{
+    left:80px;
+    }
+    input:focus ~ .floating-label2,
+  input:not(:focus):valid ~ .floating-label2{
+    left:215px;
+    }
+    
+  .flux{
+      max-width: 50%;
+  }
+}
+
+@media screen and (max-width:320px){
+    header{
+        width: 320px;
+    }
+    #image-1{
+        position: relative;
+        background-size: 100%;
+        height: 400px;
+        width: 100%;
+    }
+    #image-2{
+        position: absolute;
+        margin-left: 50px;
+        height: auto;
+    }
+    
+ }
+@media screen and (max-width:320px){
+   header{
+       width: 320px;
+   }
+   
+}

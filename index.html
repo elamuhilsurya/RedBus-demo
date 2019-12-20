@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redbus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/bus.png" class="logo">
+        <nav>
+            <label for="toggle" id="toggle">&#9776</label>
+            <!-- <input type="checkbox" id="toggle"/> -->
+            <ul class="nav-links">
+                <li><a href="#">Bus Tickets</a></li>
+                <li><a href="#">rPool</a></li>
+                <li><a href="#">Hotel</a></li>
+                <li><a href="#">Bus Hire</a></li>
+                <li><a href="#">Pilgrimages</a></li>
+            </ul>
+        </nav> 
+        <a class="cta" href="#"><button>Contact</button></a>
+    </header>   
+    <div class="banner">
+            <img id="image1" onload="setInterval(myFunction, 1000);" style="width: 100%;height: 450px" src="https://st.redbus.in/Images/webplatform/india/Hero-Image-BG-02.png" alt="..." />
+            <img id="image2"  src="https://st.redbus.in/Images/webplatform/india/Hero-Image-FG.png" alt="..." />
+            <div class="card">
+                <form action="/action_page.php" class="form">
+                  <label for="location"> </label>
+                  <div class="icon">
+                      <i class="fa fa-building" aria-hidden="true"></i>
+                </div>
+                  <input class="input-field" type="text"  name="" required/>
+                  <span class="floating-label" >From</span> 
+                  
+                  <div class="icon">
+                    <i class="fa fa-building" aria-hidden="true"></i>
+              </div>
+                <input class="input-field" type="text"  name="" required/>
+                <span class="floating-label2" >To</span>
+                  
+              
+                  <label for="booking-date"></label>
+                  <div class="icon">
+                      <i class="fa fa-calendar" aria-hidden="true"></i>
+              </div>
+              <input type="date"  name="lastname"  id="today" >
+              
+                  <label for="country"></label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                
+                  <input type="submit" value="Search Buses">
+                </form>
+                <div class="box">
+                    <img class="img-1" src="https://st.redbus.in/Images/INDOFFER/FESTIVE/New1/100x100.png">
+                    <span class="box-txt">SAVE UP TO RS 250 ON BUS TICKET</span>
+                    <span class="box-t">Use code FIRST on App</span>
+                </div>    
+              </div>
+       
+    </div>
+  <div class="flux">
+        <div class="card1">
+            <span> Get assured cashback between Rs.150 to Rs.500</span>
+            <img src="https://s1.rdbuz.com/Images/ola/new/274x147.png">
+            <span> Limited Period Offer</span>
+            <span> Pay Using OlaMoney Postpaid</span>
+        </div>
+        <div class="card2">
+            <span> Get assured cashback between Rs.150 to Rs.500</span>
+            <img src="https://s1.rdbuz.com/Images/ola/new/274x147.png">
+            <span> Limited Period Offer</span>
+            <span> Pay Using OlaMoney Postpaid</span>
+        </div>
+        <div class="card3">
+            <span> Get assured cashback between Rs.150 to Rs.500</span>
+            <img src="https://s1.rdbuz.com/Images/ola/new/274x147.png">
+            <span> Limited Period Offer</span>
+            <span> Pay Using OlaMoney Postpaid</span>
+        </div>
+
+  </div> 
+  <div>
+    <div class="bg-video" style="background-image: url(https://st.redbus.in/Images/webplatform/india/Video-Widget.png);background-repeat: no-repeat;left:148px;position: relative;width: 90%;height: 236px; top: 25px;">
+        <div class="video_section" style="position: relative;width: 375px;margin: 0 auto;float: left;top: 21px;x;left: 5px;">
+            <iframe width="375" height="198" src="https://www.youtube.com/embed/S9jVsNsvoIY"></iframe>
+        </div>
+    </div>
+  </div> 
+<script>
+	function foo() {
+        document.getElementById("image1").height="400";
+        document.getElementById("image1").height="1024";
+        document.getElementById("image1").src="images/sun.jpg";
+        
+}
+function f1(){
+    document.getElementById("image1").src="https://st.redbus.in/Images/webplatform/india/Hero-Image-BG-02.png";
+}
+window.onload = function() {            
+    setInterval("foo()",3000);
+    setInterval("f1()",6000);
+}
+
+      
+//        window.onload = function(){
+//  setInterval(function(){
+//     document.getElementById("image1").src="images/sun.jpg";
+//  }, 1000);
+// };
+
+        let today = new Date().toISOString().substr(0, 10);
+        document.querySelector("#today").value = today;
+       
+</script>
+</body>
+</html>
